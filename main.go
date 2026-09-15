@@ -9,5 +9,6 @@ import (
 func main() {
 	http.HandleFunc("/find-paths", handler.DfsHandler)
 	fmt.Println("Server Started running on 8080....")
+	fmt.Println("good bye")
 	http.ListenAndServe(":8080", nil)
 }
